@@ -28,3 +28,7 @@ body{
 img:hover{
   transform: scale(1.1);
 }
+.show-details-page h1{
+  text-align: center;
+  color: white;
+}
