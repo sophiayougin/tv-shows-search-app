@@ -13,7 +13,7 @@ class SearchPage extends React.Component{
   onSearch = (input) =>{
     var obj = {};
     const str = input;
-    const url = `http://api.tvmaze.com/search/shows?q=${str}`;
+    const url = `https://api.tvmaze.com/search/shows?q=${str}`;
    axios.get(url)
    .then(result =>{
      for(let key in result.data){
