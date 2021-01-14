@@ -29,7 +29,7 @@ class ShowDetails extends React.Component{
   }
   componentDidMount(){
     let showId = this.props.match.params.id
-  axios.get(`http://api.tvmaze.com/shows/${showId}`)
+  axios.get(`https://api.tvmaze.com/shows/${showId}`)
   .then(result => {
       var temp = result.data;
       this.setState({
